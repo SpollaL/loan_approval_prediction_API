@@ -19,6 +19,7 @@ jupyter = "^1.0.0"
 notebook = "^7.2.1"
 django = "^5.0.7"
 djangorestframework = "^3.15.2"
+scikeras = "^0.13.0"
 
 
 [build-system]
