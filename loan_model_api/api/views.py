@@ -18,7 +18,7 @@ def predict_view(request):
 
             df = pd.DataFrame(input_data, index=[0])
             prediction = pipeline.predict(df)
-
+            form.save()
             # Render the results page
             return render(
                 request,

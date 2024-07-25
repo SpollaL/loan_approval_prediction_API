@@ -26,19 +26,19 @@ class Approval(models.Model):
         ('Rural', 'Rural')
     )
 
-    first_name = models.CharField(max_length=15)
-    last_name = models.CharField(max_length=15)
-    gender = models.CharField(max_length=15, choices=GENDER_CHOICES)
-    married = models.CharField(max_length=15, choices=MARRIED_CHOICES)
-    dependents = models.IntegerField(default=0)
-    education = models.CharField(max_length=15, choices=EDUCATION_CHOICES)
-    self_employed = models.CharField(max_length=15, choices=SELF_EMPLOYED_CHOICES)
-    application_income = models.IntegerField(default=0)
-    coapplication_income = models.IntegerField(default=0)
-    loan_amount = models.FloatField(default=0)
-    loan_amount_term = models.FloatField(default=0)
-    credit_history = models.IntegerField(default=0)
-    property_area = models.CharField(max_length=15, choices=PROPERTY_AREA_CHOICES)
-
+    First_Name = models.CharField(max_length=15)
+    Last_Name = models.CharField(max_length=15)
+    Gender = models.CharField(max_length=15, choices=GENDER_CHOICES)
+    Married = models.CharField(max_length=15, choices=MARRIED_CHOICES)
+    Dependents = models.IntegerField(default=0)
+    Education = models.CharField(max_length=15, choices=EDUCATION_CHOICES)
+    Self_Employed = models.CharField(max_length=15, choices=SELF_EMPLOYED_CHOICES)
+    ApplicantIncome = models.IntegerField(default=0)
+    CoapplicantIncome = models.IntegerField(default=0)
+    LoanAmount = models.FloatField(default=0)
+    Loan_Amount_Term = models.FloatField(default=0)
+    Credit_History = models.IntegerField(default=0)
+    Property_Area = models.CharField(max_length=15, choices=PROPERTY_AREA_CHOICES)
+    
     def __str__(self):
         return self.first_name
