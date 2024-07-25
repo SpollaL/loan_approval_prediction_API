@@ -1,8 +1,8 @@
 from django.db import models
 
 # Create your models here.
-class approvals(models.Model):
-    """Approvals model
+class Approval(models.Model):
+    """Approval model
     """
     GENDER_CHOICES  = (
         ('Male', 'Male'),
