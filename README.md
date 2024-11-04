@@ -46,7 +46,7 @@ The Loan Model API is a web-based application that predicts the approval of a lo
 To get started with the Loan Model API, follow these steps:
 
 1. Clone the repository using `git clone <repository_url>`
-2. Install the dependencies using `pip install -r requirements.txt`
+2. Install the dependencies using `poetry install`
 3. Run the development server using `python manage.py runserver`
 4. Access the API using a REST client or a web browser
 
